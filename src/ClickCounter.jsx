@@ -16,8 +16,11 @@ class ClickCounter extends Component {
     }
 
     render() {
+        const counterStyle = {
+            margin: '16px'
+        }
         return (
-            <div>
+            <div style={counterStyle}>
                 <button onClick={this.onClickButton}>click me</button>
                 <div>click count: {this.state.count}</div>
             </div>
